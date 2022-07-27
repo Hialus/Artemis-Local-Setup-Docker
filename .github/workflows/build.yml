@@ -69,7 +69,7 @@ jobs:
           file: ./${{ matrix.name }}/Dockerfile
           platforms: linux/arm64/v8,linux/amd64
           push: true
-          tags: ghcr.io/ls1intum/artemis-${{ matrix.name }}:latest,ghcr.io/ls1intum/artemis-${{ matrix.name }}:${{ matrix.version }}
+          tags: ghcr.io/Hialus/artemis-${{ matrix.name }}:latest,ghcr.io/Hialus/artemis-${{ matrix.name }}:${{ matrix.version }}
           labels: "runnumber=${GITHUB_RUN_ID}"
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
